@@ -194,6 +194,7 @@ body{
     justify-content: space-around;
     gap: 7.5px;
     align-items: center;
+    text-align: center;
 }
 
 .nav-footer {
@@ -209,3 +210,4 @@ body{
 }
 
 
+/* -----------  */
