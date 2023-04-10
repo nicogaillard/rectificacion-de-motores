@@ -10,11 +10,12 @@ a {
     color: black;
 }
 
-ol,ul {
+ol,
+ul {
     list-style-type: none;
 }
 
-body{
+body {
     overflow: scroll;
     height: 100%;
 }
@@ -23,8 +24,10 @@ body{
 
 /* ---HEADER MOBILE--- */
 .header {
-    display: flex;
-    flex-flow: column;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px;
     justify-content: center;
     border: 2px solid black;
     background-color: rgb(167, 167, 167);
@@ -38,14 +41,28 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .nav-header {
     display: block;
 }
 
 .barra-navegacion {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 30px);
+justify-content: center;
+}
+
+.item-nav {
     display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscar-nav {
+    grid-column: span 2;
+    align-items: center;
+    display: flex;
     justify-content: space-around;
 }
 
@@ -110,7 +127,7 @@ body{
 .formularios-mensaje {
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30px repeat(3, 60px) 175px 60px 30px;
 
 }
@@ -210,4 +227,27 @@ body{
 }
 
 
-/* -----------  */
+/* ----------Tablet----------  */
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    /* ---HEADER TABLET--- */
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px;
+        height: 175px;
+    }
+
+
+    .barra-navegacion {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 35px);
+    }
+
+    .buscar-nav {
+        grid-column: 2/ 4;
+    }
+
+}
