@@ -40,6 +40,7 @@ body {
     font-size: 1.35rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nav-header {
@@ -229,7 +230,7 @@ justify-content: center;
 
 /* ----------Tablet----------  */
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) {
 
     /* ---HEADER TABLET--- */
     .header {
@@ -406,6 +407,98 @@ justify-content: center;
         grid-column: 1/ 3;
         background-image: url( );
         /* insertar imagen de fondo */
+    }
+
+}
+
+/* ----------DESKTOP---------- */
+
+@media (min-width: 769px) {
+
+    /*---HEADER DESKTOP--- */
+
+    /* -NAV HEADER DESKTOP- */
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 130px;
+        align-items: center;
+    }
+
+    .titulo-principal-header {
+        align-self: stretch;
+    }
+
+    .nav-header {
+        display: flex;
+        justify-content: center;
+        align-self: stretch;
+        align-items: center;
+        width: 100vw;
+        margin-bottom: 15px;
+    }
+
+    .barra-navegacion {
+        max-width: 1000px;
+        width: 100vw;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .section-mec-dos h4 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+
+    /* -----MAIN CONTACTOS----- */
+
+    .main-contactos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: flex-start;
+        margin: 30px;
+    }
+
+    .section-contacto {
+        grid-row: 1/ 3 ;
+    }
+
+
+    /* -----FOOTER----- */
+
+    .footer {
+    justify-content: space-around;
+    }
+
+    .contactos-footer {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 7.5px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .map-footer {
+        display: block;
     }
 
 }
