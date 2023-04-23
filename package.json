@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.62.0"
+  },
+  "name": "rectificacion-de-motores",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+body {
+    overflow: scroll;
+    height: 100%;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 5px;
+}
+
+/* SECTION */
+.section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: justify;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 576px) {
+
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    .section-mec-dos h4 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,103 @@
+/* ---HEADER MOBILE--- */
+.header {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: rgb(167, 167, 167);
+
+    .titulo-principal-header {
+        margin: 15px;
+        border: 2px solid black;
+        background-color: gray;
+        font-size: 1.35rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-header {
+        display: block;
+
+        .barra-navegacion {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 30px);
+            justify-content: center;
+
+            .item-nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .buscar-nav {
+                grid-column: span 2;
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+/* ---HEADER TABLET--- */
+@media (min-width: 576px) {
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px;
+        height: 175px;
+
+        .nav-header {
+            
+            .barra-navegacion {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 35px);
+
+                .buscar-nav {
+                    grid-column: 2/ 4;
+                }
+            }
+        }
+    }
+}
+
+/*---HEADER DESKTOP--- */
+@media (min-width: 769px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 130px;
+        align-items: center;
+
+        .titulo-principal-header {
+            align-self: stretch;
+        }
+
+        .nav-header {
+            display: flex;
+            justify-content: center;
+            align-self: stretch;
+            align-items: center;
+            width: 100vw;
+            margin-bottom: 15px;
+
+            .barra-navegacion {
+                max-width: 1000px;
+                width: 100vw;
+                align-self: center;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
