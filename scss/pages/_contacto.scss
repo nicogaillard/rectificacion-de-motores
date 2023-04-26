@@ -86,11 +86,12 @@
 @media (min-width: 769px) {
 
     .main-contactos {
+        background-color: $color-terciario;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         align-items: flex-start;
-        margin: 30px;
+        padding: 30px;
     }
 
     .section-contacto {

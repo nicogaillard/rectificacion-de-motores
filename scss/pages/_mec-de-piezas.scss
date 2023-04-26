@@ -1,6 +1,7 @@
 @media (min-width: 576px) {
 
     .section-mec-uno {
+        grid-template-rows: 25px 1fr;
         h2 {
             grid-column: span 2;
             text-align: center;
@@ -18,22 +19,22 @@
         figure {
             grid-column: 1/ 2;
             grid-row: 2/ 4;
+            align-self: baseline;
         }
     }
 
     .section-mec-dos {
+        grid-template-rows: 25px 1fr;
         h4 {
             grid-column: 1/ 2;
             text-align: left;
             text-justify: center;
-            font-size: .85rem;
+            align-self: baseline;
         }
 
         p {
-
             grid-column: 1/ 2;
-
-
+            align-self: baseline;
         }
 
         figure {
@@ -47,17 +48,17 @@
     /* SECTION MEC TRES */
 
     .section-mec-tres {
+        grid-template-rows: 25px 1fr;
         h3 {
             grid-column: 2/ 3;
             text-align: left;
             text-justify: center;
+            align-self: baseline;
         }
 
         p {
-
+            align-self: baseline;
             grid-column: 2/ 3;
-
-
         }
 
         figure {

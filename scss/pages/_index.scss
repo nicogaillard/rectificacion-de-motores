@@ -1,3 +1,31 @@
+figure {
+    margin: 0px;
+    padding: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.section-cuatro {
+    figure {
+        height: 300px;
+        width: 100%;
+        border: $color-secundario 2px solid;
+
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.section-tres {
+    figure {
+        height: auto;
+    }
+}
+
 @media (min-width: 576px) {
 
     .section-uno {
@@ -10,57 +38,73 @@
 
         p {
             grid-column: 1/ 2;
+            align-self: stretch;
         }
 
         figure {
+            align-self: baseline;
             grid-column: 2/ 3;
             width: 100%;
             height: 100%;
         }
     }
 
-.section-dos {
-    h2 {
-        grid-column: span 2;
-        text-align: center;
-        text-justify: center;
+    .section-dos {
+        h2 {
+            grid-column: span 2;
+            text-align: center;
+            text-justify: center;
+        }
+
+        p {
+            grid-column: 2/ 3;
+            align-self: stretch;
+
+        }
+
+        figure {
+            align-self: baseline;
+            grid-column: 1/ 2;
+            grid-row: 2/ 3;
+            width: 100%;
+            height: 100%;
+        }
+
     }
 
-    p {
-        grid-column: 2/ 3;
+    .section-tres {
+        h2 {
+            grid-column: span 2;
+            text-align: center;
+            text-justify: center;
+        }
+
+        p {
+            grid-column: 1/ 2;
+            align-self: stretch;
+        }
+
+        figure {
+            grid-column: 2/ 3;
+            align-self: baseline;
+            width: 100%;
+            height: auto;
+        }
     }
 
-    figure {
-        grid-column: 1/ 2;
-        width: 100%;
-        height: 100%;
-    }
-}
+    .section-cuatro {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
-.section-tres {
-    h2 {
-        grid-column: span 2;
-        text-align: center;
-        text-justify: center;
+        figure {
+            height: 540px;
+            max-width: 1200px;
+            width: 100%;
+            border: $color-secundario 2px solid;
+        }
     }
-
-    p {
-        grid-column: 1/ 2;
-    }
-
-    figure {
-        grid-column: 2/ 3;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.section-cuatro {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
 
 }
